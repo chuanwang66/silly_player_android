@@ -5,7 +5,7 @@ silly_player
 ---
 * based on ffmpeg & SDL2
 * mp4 supported
-* tested on android 
+* tested on android
 * built & run in android studio
 
 1. Java端(SDLActivity)
@@ -35,11 +35,26 @@ silly_player
     }
 
 ### jni/src/samSDL2.c
-   int main(int argc, char* argv[]){
-       //主循环在此，界面不退出
-       //(1)自行实现音视频解码播放，视频帧同步到音频帧
-       //(2)SDL2的源码(.c & .h)：从SDL2源码搞过来的
-       //(3)ffmpeg的二进制(.so & .h)：预先编好的
-   }
+    int main(int argc, char* argv[]){
+        //主循环在此，界面不退出
+        //(1)自行实现音视频解码播放，视频帧同步到音频帧
+        //(2)SDL2的源码(.c & .h)：从SDL2源码搞过来的
+        //(3)ffmpeg的二进制(.so & .h)：预先编好的
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
