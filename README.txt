@@ -1,5 +1,15 @@
-½âÎöSDLActivity:
-1. SDL2ÏÔÊ¾Ê¹ÓÃÒ»¸öSurfaceView(SDLActivity::mSurface)£¬ÓÃÒ»¸öºóÌ¨Ïß³Ì(Thread)SDLActivity.mSDLThreadÔÚÉÏÃæ»æÍ¼
-2. Èç¹ûºóÌ¨Ïß³ÌSDLActivity.mSDLThread²»Í£ÔÚ»æÍ¼(Ã»ÓĞÍË³ö)£¬¾ÍÒ»Ö±ÄÜ¿´µ½½çÃæ
-3. µ±ºóÌ¨Ïß³Ì½áÊøÊ±£¬SDLActivity±»finish()µô
-   ¼´SDLActivity.mSDLThread.join()Ê±£¬SDLActivity.mSingleton.finish();Ïú»ÙµôActivity
+# silly_player
+
+A naive media player composed by Sam
+===
+* based on ffmpeg & SDL2
+* mp4 supported
+* tested on android 
+* built & run in android studio
+
+===
+è§£æSDLActivity:
+* SDL2æ˜¾ç¤ºä½¿ç”¨ä¸€ä¸ªSurfaceView(SDLActivity::mSurface)ï¼Œç”¨ä¸€ä¸ªåå°çº¿ç¨‹(Thread)SDLActivity.mSDLThreadåœ¨ä¸Šé¢ç»˜å›¾
+* å¦‚æœåå°çº¿ç¨‹SDLActivity.mSDLThreadä¸åœåœ¨ç»˜å›¾(æ²¡æœ‰é€€å‡º)ï¼Œå°±ä¸€ç›´èƒ½çœ‹åˆ°ç•Œé¢
+* å½“åå°çº¿ç¨‹ç»“æŸæ—¶ï¼ŒSDLActivityè¢«finish()æ‰
+   å³SDLActivity.mSDLThread.join()æ—¶ï¼ŒSDLActivity.mSingleton.finish();é”€æ¯æ‰Activity
