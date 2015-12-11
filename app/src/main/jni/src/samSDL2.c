@@ -284,19 +284,6 @@ int main(int argc, char* argv[])
     uint64_t refresh_cnt;
     int i;
 
-    LOGD("samSDL2.c main()\n");
-    for(i=0; i<argc; ++i){
-        LOGD("argv[%d]: %s\n", i, argv[i]);
-    }
-
-    /*
-    if(argc < 2)
-    {
-        //run with arguments in codeblocks: project/Set programs' arguments.
-        LOGD("usage: $PROG_NAME $VIDEO_FILE_NAME.\n");
-        exit(1);
-    }*/
-
     is = av_mallocz(sizeof(VideoState)); //memory allocation with alignment, why???
     strncpy(is->filename, argv[1], sizeof(is->filename));
     is->pictq_mutex = SDL_CreateMutex();

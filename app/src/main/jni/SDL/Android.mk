@@ -11,7 +11,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := SDL2
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
-$(warning $(LOCAL_C_INCLUDES))
+#$(warning $(LOCAL_C_INCLUDES))
 
 #If a module adds the paths to LOCAL_EXPORT_C_INCLUDES, these paths will be added to LOCAL_C_INCLUDES
 #definition of another module which uses this one with LOCAL_STATIC_LIBRARIES or LOCAL_SHARED_LIBRARIES.

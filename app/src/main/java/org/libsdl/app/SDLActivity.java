@@ -270,6 +270,7 @@ public class SDLActivity extends Activity {
     }
 
     // C functions we call
+    public static native void nativeMp4Filepath(String filepath);
     public static native void nativeInit();
     public static native void nativeLowMemory();
     public static native void nativeQuit();
@@ -505,6 +506,7 @@ class SDLMain implements Runnable {
     @Override
     public void run() {
         // Runs SDL_main()
+        SDLActivity.nativeMp4Filepath("/storage/emulated/0/quicksort.mp4");
         SDLActivity.nativeInit();
 
         //Log.v("SDL", "SDL thread terminated");
